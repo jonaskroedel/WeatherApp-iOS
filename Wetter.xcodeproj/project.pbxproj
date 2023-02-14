@@ -11,6 +11,8 @@
 		DD4384C8299C33ED00A4218E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4384C7299C33ED00A4218E /* ContentView.swift */; };
 		DD4384CA299C33EF00A4218E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4384C9299C33EF00A4218E /* Assets.xcassets */; };
 		DD4384CD299C33EF00A4218E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4384CC299C33EF00A4218E /* Preview Assets.xcassets */; };
+		DD4384D4299C341500A4218E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4384D3299C341500A4218E /* LocationManager.swift */; };
+		DD4384D6299C34C000A4218E /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4384D5299C34C000A4218E /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DD4384C7299C33ED00A4218E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD4384C9299C33EF00A4218E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4384CC299C33EF00A4218E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD4384D3299C341500A4218E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DD4384D5299C34C000A4218E /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				DD4384C5299C33ED00A4218E /* WetterApp.swift */,
 				DD4384C7299C33ED00A4218E /* ContentView.swift */,
+				DD4384D3299C341500A4218E /* LocationManager.swift */,
+				DD4384D5299C34C000A4218E /* WeatherManager.swift */,
 				DD4384C9299C33EF00A4218E /* Assets.xcassets */,
 				DD4384CB299C33EF00A4218E /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				DD4384C8299C33ED00A4218E /* ContentView.swift in Sources */,
 				DD4384C6299C33ED00A4218E /* WetterApp.swift in Sources */,
+				DD4384D6299C34C000A4218E /* WeatherManager.swift in Sources */,
+				DD4384D4299C341500A4218E /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var locationManager = LocationManager()
+    @ObservedObject var weatherManager = WeatherManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Current location: \(locationManager.locationString)")
+            if let currentWeather = weatherManager.currentWeather {
+                Text("Current weather: \(currentWeather.temperature)°C")
+            }
+            if let hourlyWeather = weatherManager.hourlyWeather {
+                ForEach(hourlyWeather) { weather in
+                    Text("\(weather.time): \(weather.temperature)°C")
+                }
+            }
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        .onAppear {
+            locationManager.requestLocation()
+        }
     }
 }
